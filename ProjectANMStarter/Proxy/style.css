@@ -1,0 +1,55 @@
+#content2{
+    background: white;
+    padding: 10px;
+    margin: auto;
+    padding-bottom: 20px;
+    border: 0;
+    width: 75%;
+}
+.title{
+  margin:15px 10px 10px;
+}
+body{
+  background-color: #eff0f1;
+}
+h1{
+    color: black;
+}
+#img{
+    display: flex;
+    width: 100%;
+    /* margin: auto; */
+   justify-self: center;
+   align-self: center;
+}
+
+#author_img{
+    float: right;
+    margin-left: 10px;
+}
+
+.author{
+  display: block;
+}
+
+#id_social{
+    height: 40px;
+    width: 200px;
+    float: left;
+    margin: 10px;
+}
+#counter_shares{
+    float: left;
+    margin: 15px;
+    font-weight: bold; 
+    text-decoration: none;
+    font-size:30px;
+    color: dodgerblue;
+
+}
+.author{
+    margin:10px 10px 10px ;
+}
+.article-content{
+    margin:20px 20px 50px 20px;
+}
