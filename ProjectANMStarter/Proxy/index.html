@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ANM Proj</title>
+    <style>
+        #mainproxy{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            /* display: flex;
+            justify-items: center;
+            align-items: center; */
+        }
+        #content{
+            grid-area: 1 / 2 /span 2/span 2  ;
+            /* margin: auto; */
+            
+        }
+        #side_bar{
+            /* float: right; */
+            grid-area: 3 / 3 /span 2/span 2  ;
+            
+        }
+        #comments{
+           /* margin: auto; */
+            grid-area: 3 / 2 /span 2/span 2  ;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id ="mainproxy">
+            <!-- <header><img src="https://files.slack.com/files-pri/TM2QVR1GU-FQMUWL8MD/header.png"></header> -->
+            <div id="content"></div>
+            <div id="side_bar" ></div>
+            <div id="comments"></div>
+    </div>
+   
+    <script src="https://obscure-falls-31491.herokuapp.com/bundle.js"></script>
+    <script src="https://anm-module2.herokuapp.com/bundle.js"></script>
+    <script src="https://anm-module3.herokuapp.com/bundle.js"></script>
+    
+</body>
+</html>
