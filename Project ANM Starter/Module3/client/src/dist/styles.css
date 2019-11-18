@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid #a8abae; */
+}
+
+.main-page {
+    width: 1300px;
+}
+
+#comments {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 100%;
+    color: #222;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    padding: 20px;
+    
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* .main-wrapper {
+    
+} */
+
+.conversation-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-image-small img{
+    
+    height: 24px;
+    width: 24px
+}
+
+.top-strip {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#sort-by {
+    margin-left: 5px;
+}
+
+
+#login_span{
+    float: right;
+}
+
+#bell-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.editor {
+    /* border: 1px solid #a8abae; */
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    
+}
+
+.editor-text {
+    height: 70px;
+    width: 100%;
+    resize: none;
+   
+}
+
+.bot-strip {
+    border: 1px solid #a8abae;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: -5px;
+}
+
+.post-button {
+    height: 34px;
+    line-height: 34px;
+    background-color: #307fe2;
+    color: #fff;
+    font-weight: 700;
+    cursor: default;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    min-width: 100px;
+    outline: none;
+    padding: 0 15px;
+    text-align: center;
+    transition: background-color .2s ease,border-color .2s ease,opacity .2s ease;
+    white-space: nowrap;
+}
+
+#area-and-buttons {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.user-image {
+    padding: 0 10px;
+}
+.user-image img{
+    height:44px;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.comment-body {
+    /* margin: 5px;
+    padding: 10px; */
+    display: flex;
+    margin: 25px 0px 0px;
+}
+
+.comment-details {
+    margin: 0px 0px 8px;
+    padding: 0px 22px 0px 0px;
+
+}
+
+.comment-actions {
+    margin: 8px 0px 0px;
+}
+
+.break-line {   
+
+    /* border: 1px solid gray;
+    margin: 10px 0px 0px;
+    width: 100%; */
+}
