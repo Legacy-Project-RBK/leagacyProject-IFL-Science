@@ -43,7 +43,7 @@ class App extends React.Component {
             type: "POST",
             data: { 
                 text: comment, 
-                likes: 1,
+                likes: 0,
                 date: new Date(Date.now()) 
             },
             dataType: "application/json",
