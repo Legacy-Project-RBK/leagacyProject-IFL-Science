@@ -20,22 +20,20 @@ li {
   width: 30%;
 }  */
 
-.widgetContainerBox { 
+.widgetContainerBox {
   float: right;
   border: 1px solid #000000;
   margin-right: 30%;
-  width: 25.6%; 
+  width: 25.6%;
   margin-top: -900px;
 }
 
-
-.WidgetContentBox {  
- padding: 5px; 
- margin: 5px;
- border: 1px;
- width:10;
+.WidgetContentBox {
+  padding: 5px;
+  margin: 5px;
+  border: 1px;
+  width: 10;
 }
-
 
 .imagewrap {
   width: 28.7%;
@@ -58,7 +56,7 @@ li {
   font: inherit;
   vertical-align: baseline;
   display: inline-table;
-} 
+}
 
 #eye-symbol {
   width: 17px;
