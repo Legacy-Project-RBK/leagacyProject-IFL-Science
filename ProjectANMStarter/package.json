@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "faker": "^4.1.0",
     "mongoose": "^5.7.9"
   },
   "devDependencies": {},
