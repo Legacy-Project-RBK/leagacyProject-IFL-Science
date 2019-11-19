@@ -35,6 +35,8 @@ li {
 .flex-container {
   display: flex;
   width: 100%;
+  border: 0.1px;
+  border-top: 7px solid #bbdf33;
 }
 .item1 {
   order: 1;
@@ -47,5 +49,14 @@ li {
 }
 .social,
 .nav {
-  margin: 50px;
+  margin-top: 50px;
+}
+.social {
+  margin-left: 150px;
+}
+.nav {
+  margin-left: 200px;
+}
+.mainlogo {
+  margin-left: 200px;
 }

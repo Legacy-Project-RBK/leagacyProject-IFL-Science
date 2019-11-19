@@ -5,7 +5,7 @@ class Catagories extends React.Component {
   render() {
     return (
       <div className="flex-container">
-        <ul className="item1">
+        <ul className="item1 mainlogo">
           <a className="logo" href="https://www.iflscience.com/">
             <img
               src="https://cdn.iflscience.com/assets/site/img/iflscience_logo.png?v=1.3.5"
