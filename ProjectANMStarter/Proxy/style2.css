@@ -1,3 +1,7 @@
+/* .postspace {
+  margin-left: 300px;
+} */
+
 .WidgeTitleBox {
   background-color: #129bf4;
   padding: 10px;
@@ -5,7 +9,6 @@
   font-size: 1.3em;
   width: 100%;
   margin: 0px;
-  /* position: relative; */
 }
 
 li {
@@ -15,17 +18,13 @@ li {
   padding-right: 1%;
 }
 
-/* .title {
-  word-wrap: normal;
-  width: 30%;
-}  */
-
 .widgetContainerBox {
   float: right;
   border: 1px solid #000000;
   margin-right: 30%;
   width: 25.6%;
   margin-top: -900px;
+  margin-left: 300px;
 }
 
 .WidgetContentBox {
@@ -40,12 +39,12 @@ li {
   height: 28.7%;
   min-height: 80px;
   float: left;
-  margin: 0px 10px 0px 0;
+  margin: 0px 10px 0px 0px;
   max-height: 100%;
 }
 
 .postlistBox {
-  padding-left: 10px;
+  padding-left: 3px;
 }
 
 .title {
