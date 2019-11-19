@@ -39,12 +39,12 @@ li {
   height: 28.7%;
   min-height: 80px;
   float: left;
-  margin: 0px 10px 0px 0;
+  margin: 0px 10px 0px 0px;
   max-height: 100%;
 }
 
 .postlistBox {
-  padding-left: 10px;
+  padding-left: 3px;
 }
 
 .title {
