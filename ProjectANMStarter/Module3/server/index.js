@@ -48,7 +48,7 @@ app.post('/comments', (req, res) => {
     .catch(err => console.log(err))
 })
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
