@@ -37,7 +37,7 @@ app.use(express.static(__dirname + "/../client/dist"));
 //   app.use(express.static(__dirname + "/../client/src/dist"));
 // });
 
-const port = process.env.PORT || 5000; //this is for heruko ()
+const port = process.env.PORT || 6000; //this is for heruko ()
 
 // app.listen(process.env.PORT || 3000)
 app.listen(port, function() {
