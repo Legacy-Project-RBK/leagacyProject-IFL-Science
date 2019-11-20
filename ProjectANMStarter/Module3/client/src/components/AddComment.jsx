@@ -16,6 +16,7 @@ class AddComment extends Component {
     }
 
     add() {
+        console.log("HIII")
         this.props.onAdd(this.state.comment);
     } 
 
