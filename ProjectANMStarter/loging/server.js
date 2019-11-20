@@ -28,24 +28,24 @@ process.env.SECRET_KEY = "secret";
 //   });
 // });
 app.post("/signup", (req, res) => {
-  const today = new Date();
+  var body = req.body;
+
   const userData = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    email: req.body.email,
-    password: req.body.password,
-    created: today
+    userName: body.userName,
+    email: body.email,
+    password: body.password
   };
+  console.log(userData);
   db.Signup.findOne({
-    email: req.body.email
+    email: body.email
   })
     .then(user => {
-      if (!user.email) {
+      if (typeof user !== "undefined") {
         console.log(user);
-        bcrypt.hash(req.body.password, 10, (err, hash) => {
+        bcrypt.hash(body.password, 10, (err, hash) => {
           userData.password = hash;
           db.Signup.create(userData).then(user => {
-            res.json({ status: user.email + "registered!" }).catch(err => {
+            res.json({ status: userData.email + "registered!" }).catch(err => {
               res.send("error" + err);
             });
           });
