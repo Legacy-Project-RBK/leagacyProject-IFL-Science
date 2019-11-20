@@ -1,0 +1,29 @@
+#mainDiv{
+    margin-right: 300px;
+    margin-left: 300px;
+}
+h2 {
+    display: block;
+    font-size: 4em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(11, 145, 53);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+/* .subDivs {
+    padding-left: 100px;
+    width: 600px;
+    height: 300px;
+} */
