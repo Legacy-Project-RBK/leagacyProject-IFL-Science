@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const URI =
   "mongodb+srv://maysqunaibi:123456789rbk@cluster0-mbxj6.mongodb.net/legacyContents?retryWrites=true&w=majority"; //path?
@@ -48,7 +48,11 @@ let saveComment = comment => {
     likes: comment.likes,
     date: comment.date //needs to be fixed
   });
+  // com.save(); 
   com.save();
+
 };
+
+
 
 module.exports = { Comment, saveComment };
