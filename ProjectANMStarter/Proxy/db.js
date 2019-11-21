@@ -12,7 +12,8 @@ db.once("open", function() {
 });
 
 const CommentSchema = Schema({
-  // id_Content: {type: Number}, //this is a foreign key for the article
+  idContent: {type: Number}, //this is a foreign key for the article
+  username : {type: String},
   text: { type: String },
   likes: { type: Number },
   date: { type: String }
@@ -46,6 +47,8 @@ let save = article => {
 
 let saveComment = comment => {
   var com = new Comment({
+    idContent: comment.idContent,
+    username:comment.username,
     text: comment.text,
     likes: comment.likes,
     date: comment.date //needs to be fixed

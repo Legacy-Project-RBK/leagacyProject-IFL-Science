@@ -34,9 +34,10 @@ app.get('/comments',  (req, res) => {
 //   );
 // }
 // )
-
+var query = "";
 
 app.post('/comments', (req, res) => {
+  console.log(query, "THIS WHAT WE NEED")
   const newComment = Comment({
     text: req.body.text,
     likes: req.body.likes,
@@ -49,8 +50,10 @@ app.post('/comments', (req, res) => {
 })
 
 //Content config
+
 app.get('/content', function (req, res) {
-  console.log(req.query, "reeeeeqqqqq")
+  console.log(req.query, "reeeeeqqqqq");
+  query = req.query;
   var n = req.query._id;
   console.log("get data from server");
   Content.findOne({_id: n}).exec((err,content) => { 
