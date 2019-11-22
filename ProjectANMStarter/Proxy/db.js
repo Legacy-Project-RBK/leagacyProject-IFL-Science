@@ -12,7 +12,7 @@ db.once("open", function() {
 });
 
 const CommentSchema = Schema({
-  idContent: {type: Number}, //this is a foreign key for the article
+  idContent: {type: String}, //this is a foreign key for the article
   username : {type: String},
   text: { type: String },
   likes: { type: Number },

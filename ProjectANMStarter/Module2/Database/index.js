@@ -39,4 +39,4 @@ const Content = mongoose.model("Content", ContentSchema);
 // };
 // save();
 
-module.exports = { save, Content };
+module.exports = {  Content };

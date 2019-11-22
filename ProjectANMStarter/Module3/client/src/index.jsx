@@ -42,6 +42,8 @@ class App extends React.Component {
             url: "/comments",
             type: "POST",
             data: { 
+                idContent: "",
+                username:"anonymous",
                 text: comment, 
                 likes: 0,
                 date: new Date(Date.now()) 
