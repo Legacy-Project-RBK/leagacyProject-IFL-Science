@@ -1,26 +1,36 @@
 .user,
 .em,
 .pass,
+.choose,
 h2 {
   color: white !important;
+  font-size: 22px !important;
+}
+.logo {
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 250px;
 }
 .field {
-  width: 250px !important;
+  width: 340px !important;
 }
 .ui button {
-  background-color: yellow !important;
+  background-color: #bbdf33 !important;
   width: 150px !important;
-  margin-left: 53px !important;
+  margin-left: 6px !important;
 }
 .required {
   color: red;
 }
 .auth {
-  margin-top: 10px;
-  margin-left: 830px !important;
+  display: flex;
+  justify-content: center;
 }
 h2 {
-  margin-top: 250px !important ;
+  margin-bottom: 10px !important ;
   font-size: 32px !important;
   font-family: Helvetica, sans-serif, Arial !important;
+}
+.join {
+  color: white;
 }
