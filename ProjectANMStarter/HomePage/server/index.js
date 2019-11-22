@@ -1,7 +1,7 @@
 const express = require("express");
 //const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
-const db = require("../db.js");
+//const db = require("../db.js");
 let app = express();
 
 app.use(bodyParser.json());
@@ -39,7 +39,7 @@ app.use(express.static(__dirname + "/../client/dist"));
 
 const port = process.env.PORT || 3003; //this is for heruko ()
 
-// app.listen(process.env.PORT || 3000)
+
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
 });

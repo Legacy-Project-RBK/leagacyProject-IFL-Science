@@ -33,7 +33,7 @@ function Arrows(props) {
     return (
       <div>
         <div>
-          <h2>Home Page</h2>
+          <h2>IFL SCIENCE</h2>
         </div>
         <div id="mainDiv">
         <Slider {...settings}>

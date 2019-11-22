@@ -12,7 +12,7 @@ const CommentsList = (props) => (
                         </div>
                         <div className="comment-content">
                             <div className="comment-details">
-                                <span className="username">Diab</span>
+                                <span className="username">{comment.username}</span>
                                 <span className="star-status">* Influencer </span>
                                 <span className="time">{comment.date}</span>
                             </div>

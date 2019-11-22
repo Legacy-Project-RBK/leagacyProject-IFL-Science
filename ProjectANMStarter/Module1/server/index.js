@@ -30,6 +30,7 @@ app.get('/content', function (req, res) {
         console.log(err);
         //req.send();
       }
+      //console.log(content)
       res.json(content)});
 });
 

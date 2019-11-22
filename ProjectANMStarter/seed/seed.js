@@ -1,6 +1,6 @@
 const faker = require("faker");
-const save = require("../Database/index.js").save;
-const Content = require("../Database/index.js").Content;
+const save = require("./db.js").save;
+const Content = require("./db.js").Content;
 //declare function and call the save function from the database
 var fakeSave = function() {
   for (var i = 0; i <= 50; i++) {
