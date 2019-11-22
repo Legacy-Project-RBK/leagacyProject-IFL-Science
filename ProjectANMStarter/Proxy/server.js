@@ -50,12 +50,13 @@ app.post('/comments', (req, res) => {
 
 //Content config
 app.get('/content', function (req, res) {
-  // console.log("contentcour")
-  console.log("get datat from server");
-  Content.find({}).exec((err,content) => { 
+  console.log(req.query, "reeeeeqqqqq")
+  var n = req.query._id;
+  console.log("get data from server");
+  Content.findOne({_id: n}).exec((err,content) => { 
       if(err){
         console.log(err);
-        req.send()
+        //req.send();
       }
       res.json(content)});
 });
@@ -64,7 +65,7 @@ app.get('/story', function (req, res) {
   db.Content
         .find({})
         .limit(5)
-        .sort({shares: -1})
+        //.sort({shares: -1})
         .exec((err,data) => { 
       if(err){
         console.log(err);

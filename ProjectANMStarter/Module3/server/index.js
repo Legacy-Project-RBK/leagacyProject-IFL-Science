@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const saveComment = require('.././Database/index.js');
+//const saveComment = require('.././Database/index.js');
 
 let app = express();
 
@@ -37,7 +37,7 @@ app.get('/comments',  (req, res) => {
 // })
 
 app.post('/comments', (req, res) => {
-  const newComment = Comment({
+  const newComment = new Comment({
     text: req.body.text,
     likes: req.body.likes,
     date: req.body.date
@@ -53,4 +53,3 @@ const port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
 });
-
