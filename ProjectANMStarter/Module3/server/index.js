@@ -11,10 +11,10 @@ app.use(express.static(__dirname + '/../client/src/dist'));
 
 const Comment = require('.././Database/index.js').Comment; //require the schema in database
 
-
+//var query = " ";
 app.get('/comments',  (req, res) => {
   // res.send('Helo World from server 3');
-  Comment.find({})
+  Comment.find({_id: query})
     .sort({ date: -1 })
     .then(comments => res.json(comments))
     // .catch(err => console.log(err))
