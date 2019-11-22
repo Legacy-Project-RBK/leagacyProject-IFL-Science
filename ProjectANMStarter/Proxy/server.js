@@ -13,15 +13,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); 
 //Comments config
 const Comment = require('./db.js').Comment; //require the schema in database
-
+var query = "";
 app.get('/comments',  (req, res) => {
   // res.send('Helo World from server 3');
-  Comment.find({})
+  console.log(query, "QUEEERRRYYY")
+  Comment.find({idContent: query._id})
     .sort({ date: -1 })
-    .then(comments => res.json(comments))
+    .then(comments => {res.json(comments)
+    console.log("Commentttttssss", comments)})
     // .catch(err => console.log(err))
 
 });
+
 
 // app.post('/shares', function (req, res) {
 //   console.log("sucees post increaments shares")
@@ -37,7 +40,11 @@ app.get('/comments',  (req, res) => {
 
 
 app.post('/comments', (req, res) => {
+  console.log(query, "THIS WHAT WE NEED")
+
   const newComment = Comment({
+    idContent: query,
+    username:req.body.username,
     text: req.body.text,
     likes: req.body.likes,
     date: req.body.date
@@ -49,13 +56,16 @@ app.post('/comments', (req, res) => {
 })
 
 //Content config
+
 app.get('/content', function (req, res) {
-  // console.log("contentcour")
-  console.log("get datat from server");
-  Content.find({}).exec((err,content) => { 
+  console.log(req.query, "reeeeeqqqqq");
+  query = req.query;
+  var n = req.query._id;
+  console.log("get data from server");
+  Content.findOne({_id: n}).exec((err,content) => { 
       if(err){
         console.log(err);
-        req.send()
+        //req.send();
       }
       res.json(content)});
 });
@@ -64,7 +74,7 @@ app.get('/story', function (req, res) {
   db.Content
         .find({})
         .limit(5)
-        .sort({shares: -1})
+        //.sort({shares: -1})
         .exec((err,data) => { 
       if(err){
         console.log(err);

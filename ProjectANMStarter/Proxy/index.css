@@ -1,0 +1,65 @@
+.sto,
+.fac,
+.twitt,
+.insta,
+.you {
+  width: 40px;
+  height: 40px;
+}
+.env,
+.tec,
+.space,
+.hm,
+.brain,
+.pa,
+.ph,
+.che,
+.pol,
+.eb {
+  width: 60px;
+  height: 60px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  border: 0.1px;
+  border-top: 7px solid #bbdf33;
+}
+.item1 {
+  order: 1;
+}
+.item2 {
+  order: 3;
+}
+.item3 {
+  order: 2;
+}
+.social,
+.nav {
+  margin-top: 50px;
+}
+.social {
+  margin-left: 120px;
+  width: 500px;
+}
+.nav {
+  margin-left: 120px;
+  width: 900px;
+}
+.mainlogo {
+  margin-left: 100px;
+}
+.main-logo {
+  width: 40px;
+  height: 40px;
+}
