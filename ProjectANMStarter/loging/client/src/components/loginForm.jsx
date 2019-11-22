@@ -1,13 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
-
 import $ from "jquery";
-class Signup extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   contents: []
-    // };
   }
   saveData() {
     event.preventDefault();
@@ -29,15 +25,16 @@ class Signup extends React.Component {
     return (
       <div>
         {" "}
-        <h2 style={{ textAlign: "center" }}>IFLscience Login-Signup</h2>
+        <div style={{ textAlign: "center" }}>
+          <img
+            className="logo"
+            src="https://previews.123rf.com/images/tanyastock/tanyastock1609/tanyastock160901582/62841748-user-icon-human-person-symbol-avatar-login-sign-blue-circle-button-with-flat-web-icon-vector.jpg"
+          ></img>
+          <h2>IFLscience Login-Signup</h2>
+          <p className="join">New to IFL Science? Join</p>
+        </div>
         <div className="auth">
           <form onSubmit={this.saveData.bind(this)} className="ui form">
-            <div className="field">
-              <label className="user">User Name</label>
-              <span class="required">*</span>
-              <input id="name" placeholder="User Name" />
-            </div>
-
             <div className="field">
               <label className="em">Email</label>
               <span class="required">*</span>
@@ -49,14 +46,19 @@ class Signup extends React.Component {
               <span class="required">*</span>
               <input type="password" id="password" placeholder="password" />
             </div>
-
-            <button type="submit" className="ui button">
-              Signup
-            </button>
+            <div>
+              <button type="submit" className="ui button">
+                Login
+              </button>
+              <span className="choose">or</span>
+              <button type="submit" className="ui button">
+                Signup
+              </button>
+            </div>
           </form>
         </div>
       </div>
     );
   }
 }
-export default Signup;
+export default Login;
