@@ -13,12 +13,13 @@ app.get('/story', function (req, res) {
   db.Content
         .find({})
         .limit(5)
-        .sort({shares: -1})
+        //.sort({shares: -1})
         .exec((err,data) => { 
       if(err){
         console.log(err);
         req.send()
       }
+      //console.log(data);
       res.json(data);
     })  
 });

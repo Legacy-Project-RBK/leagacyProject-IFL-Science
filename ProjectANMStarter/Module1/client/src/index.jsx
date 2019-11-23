@@ -42,7 +42,7 @@ class App extends React.Component {
         var id_ = path.substring(path.indexOf("=") + 1);
         //var id = new ObjectId(id_)
         if (id_ === "") {
-            id_ = 1;
+            id_ = "5dd4345a99d0756b265a27ed";
         }
         console.log(id_);
         $.ajax({

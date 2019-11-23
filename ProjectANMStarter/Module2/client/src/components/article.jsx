@@ -7,9 +7,10 @@ class Article extends React.Component {
   }
   render() {
     console.log("nour", this.props.story);
+    var url = "http://localhost:7000/?id=" + this.props.story._id;
     return (
       <div className="postspace">
-        <a href="#">
+        <a href={url}>
           <img className="imagewrap" src={this.props.story.image} />
         </a>
         {/*image div*/}

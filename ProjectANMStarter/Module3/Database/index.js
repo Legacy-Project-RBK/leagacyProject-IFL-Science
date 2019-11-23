@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const URI =
   "mongodb+srv://maysqunaibi:123456789rbk@cluster0-mbxj6.mongodb.net/legacyContents?retryWrites=true&w=majority"; //path?
@@ -13,7 +13,8 @@ db.once("open", function() {
 });
 
 const CommentSchema = Schema({
-  // id_Content: {type: Number}, //this is a foreign key for the article
+  idContent: {type: String}, //this is a foreign key for the article
+  username : {type: String},
   text: { type: String },
   likes: { type: Number },
   date: { type: Date }
@@ -44,11 +45,16 @@ const Comment = mongoose.model("Comment", CommentSchema);
 
 let saveComment = comment => {
   var com = new Comment({
+    idContent: comment.idContent,
+    username:comment.username,
     text: comment.text,
     likes: comment.likes,
     date: comment.date //needs to be fixed
   });
+  // com.save(); 
   com.save();
 };
+
+
 
 module.exports = { Comment, saveComment };
