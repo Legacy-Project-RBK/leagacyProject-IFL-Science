@@ -1,3 +1,6 @@
+/* H1{
+
+} */
 .sto,
 .fac,
 .twitt,
@@ -18,6 +21,7 @@
 .eb {
   width: 60px;
   height: 60px;
+  padding: 3px;
 }
 
 ul {
@@ -62,4 +66,299 @@ li {
 .main-logo {
   width: 40px;
   height: 40px;
+}
+
+.env {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.env:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tec {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.tec:hover {
+  animation-play-state: open;
+  animation: in 0.45s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.space {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.space:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hm {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.hm:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.brain {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.brain:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.brain {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.brain:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pa {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.pa:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ph {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.ph:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.che {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.che:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pol {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.pol:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.eb {
+  animation-play-state: open;
+  animation: out 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+.eb:hover {
+  animation-play-state: open;
+  animation: in 0.5s ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
