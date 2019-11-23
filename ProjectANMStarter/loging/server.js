@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const db = require("./db.js");
 
 app.use(express.static(__dirname + "/client/dist"));
@@ -13,45 +13,29 @@ app.use(cors());
 var port = process.env.PORT || 3001;
 process.env.SECRET_KEY = "secret";
 
-// app.get("/me", function(req, res) {
-//   var token = req.headers["x-access-token"];
-//   if (!token)
-//     res.status(401).send({ auth: false, message: "No token provided." });
-
-//   jwt.verify(token, config.secret, function(err, decoded) {
-//     if (err)
-//       res
-//         .status(500)
-//         .send({ auth: false, message: "Failed to authenticate token." });
-
-//     res.status(200).send(decoded);
-//   });
-// });
 app.post("/signup", (req, res) => {
   var body = req.body;
-
   const userData = {
     userName: body.userName,
     email: body.email,
     password: body.password
   };
-  console.log(userData);
+  // console.log(userData);
   db.Signup.findOne({
     email: body.email
   })
     .then(user => {
-      if (typeof user !== "undefined") {
-        console.log(user);
+      if (!user) {
         bcrypt.hash(body.password, 10, (err, hash) => {
           userData.password = hash;
           db.Signup.create(userData).then(user => {
-            res.json({ status: userData.email + "registered!" }).catch(err => {
+            res.json({ status: user.email + " sresgisterd" }).catch(err => {
               res.send("error" + err);
             });
           });
         });
       } else {
-        res.json({ error: "User already exists" });
+        res.send({ error: "User already exists" });
       }
     })
     .catch(err => {
@@ -60,30 +44,30 @@ app.post("/signup", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  User.findOne({
+  db.Signup.findOne({
     email: req.body.email
   })
     .then(user => {
       if (user) {
-        if (bcrypt.compareSync(req.body.password)) {
+        if (bcrypt.compareSync(req.body.password, user.password)) {
           const payload = {
             _id: user._id,
-            firstName: user.firstName,
-            lastName: user.lastName,
-            email: user.email
+            userName: user.userName,
+            email: user.email,
+            password: user.password
           };
           let token = jwt.sign(payload, process.env.SECRET_KEY, {
-            expiresIn: 1440
+            expiresIn: "1h"
           });
-          res.send(tpken);
+          res.send(token);
         } else {
-          res.json({ error: "user does not exist" });
+          res.json({ error: "wrong password " });
         }
       } else {
-        res.json({ error: "user does not exist" });
+        res.json({ error: "user  not exist" });
       }
     })
-    .catch("error" + err);
+    .catch("error");
 });
 
 app.listen(port, () => {

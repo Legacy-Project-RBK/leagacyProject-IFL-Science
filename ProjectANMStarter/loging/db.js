@@ -15,22 +15,10 @@ db.once("open", function() {
 const userSchema = new Schema({
   userName: { type: String },
   email: { type: String },
-  password: { type: String },
-  date: { type: Date, default: Date.now }
+  password: { type: String }
 });
 
 const Signup = mongoose.model("signup", userSchema);
 
-let save = user => {
-  var signup = new Signup({
-    firstName: user.firstName,
-    lastName: user.lastName,
-    email: user.email,
-    password: ausere.password,
-    date: user.date
-  });
-  signup.save();
-};
 module.exports.Signup = Signup;
 module.exports.userSchema = userSchema;
-module.exports.save = save;
