@@ -87,7 +87,24 @@
 
 
             .To run the different modules in the project see the
-            scripts in backage.json file
-
+            scripts in Package.json file:
+            
+            "scripts": {
+                "start": "node server/index.js",
+                "react-dev": "webpack -d --watch",
+                "build": "webpack",
+                "server1": "nodemon server/index.js",
+                "server-dev": "nodemon ./Proxy/server.js",
+                "heroku-postbuild": "webpack -p"
+              }
+            
+            - to run the server do:
+            
+                -$ npm run <ServerName>
+                
+             - to run webpack do:
+             
+                -$ npm run react-dev
+                
 
                         ///////////////////////
