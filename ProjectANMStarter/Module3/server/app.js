@@ -36,6 +36,22 @@ app.get('/comments',  (req, res) => {
 //   res.send("saved")
 // })
 
+<<<<<<< HEAD
+app.post("/comments", (req, res) => {
+  const newComment = new Comment({
+    text: req.body.text,
+    likes: req.body.likes,
+    date: req.body.date
+  });
+
+  newComment
+    .save()
+    .then(comment => res.json(comment))
+    .catch(err => console.log(err));
+});
+
+module.exports = app;
+=======
 // app.post('/comments', (req, res) => {
 //   const newComment = new Comment({
 //     text: req.body.text,
@@ -70,3 +86,4 @@ module.exports = app;
 // app.listen(port, function() {
 //   console.log(`listening on port ${port}`);
 // });
+>>>>>>> ae7c609e2631e939f4cfa31ea1fe345b0ec4f1bd

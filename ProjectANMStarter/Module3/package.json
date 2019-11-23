@@ -29,6 +29,7 @@
     "webpack": "^2.1.0-beta.22"
   },
   "dependencies": {
+    "@shelf/jest-mongodb": "^1.1.3",
     "body-parser": "^1.17.0",
     "concurrently": "^5.0.0",
     "express": "^4.17.1",

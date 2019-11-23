@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
-import Conversation from './components/Conversation.jsx';
 import AddComment from './components/AddComment.jsx';
 import CommentsList from './components/CommentsList.jsx';
 
@@ -56,8 +55,6 @@ class App extends React.Component {
     }
     render(){
         return(<div className="comments-wrap">
-            {/* <h1>Hello from Module3</h1> */}
-            {/* <Conversation /> */}
             <AddComment onAdd={this.add.bind(this)} comments={this.state.comments}/> 
             <CommentsList comments={this.state.comments}/>
       </div> ) 

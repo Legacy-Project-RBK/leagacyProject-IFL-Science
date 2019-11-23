@@ -39,7 +39,7 @@ class AddComment extends Component {
                             </span>
                             <span id="login_span">
                                 <span><img id="bell-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfIquv6E1T6tkOAAHLonzbrplg01GKbtbN31CTJmrrqUxWdhwZ&s" alt="bell-img"/></span>
-                                <span>Log in</span>
+                                {/* <span>Log in</span> */}
                             </span>
                         </div>
                         <div className="editor">
