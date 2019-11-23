@@ -12,7 +12,7 @@ module.exports = {
   // browser: false,
 
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "/private/var/folders/nf/5qh1_c395m75_b9lc0s7q9g40000gn/T/jest_dx",
+  // cacheDirectory: "/private/var/folders/wq/cs0z2h1x23s482b8stts13080000gn/T/jest_dx",
 
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
@@ -27,7 +27,9 @@ module.exports = {
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ["/node_modules/"],
+  // coveragePathIgnorePatterns: [
+  //   "/node_modules/"
+  // ],
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -89,7 +91,7 @@ module.exports = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: "@shelf/jest-mongodb",
+  // preset: null,
 
   // Run tests from one or more projects
   // projects: null,
@@ -130,7 +132,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node"
+  testEnvironment: "node",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -168,9 +170,7 @@ module.exports = {
   // transform: null,
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  transformIgnorePatterns: ["/node_modules/"]
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
