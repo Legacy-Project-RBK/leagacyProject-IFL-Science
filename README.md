@@ -2,7 +2,11 @@
 
 ## Main Idea:
 
--- To edit some one code
+-- Deal with some one else code from the capstone project
+-- Add some functionality to that code and edit the css if needed.
+-- Generate fake data
+-- Activate the Autentication system
+-- Do Testing
 
 ## Technologies Used:
 
@@ -71,7 +75,7 @@
                     "request": "^2.88.0"
                 }
 
-            If you have any problem with the anyone of them run the command related to it:
+            If you have any problem with the any of them run the command related to it:
 
                 -$ npm install  body-parser --save
                 -$ npm install nodemon --save
@@ -82,4 +86,8 @@
                 -$ npm install jquery --save
 
 
-            .To run the different modules in the project see the scripts in backage.json file
+            .To run the different modules in the project see the
+            scripts in backage.json file
+
+
+                        ///////////////////////
