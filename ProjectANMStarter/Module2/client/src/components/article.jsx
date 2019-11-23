@@ -7,7 +7,8 @@ class Article extends React.Component {
   }
   render() {
     console.log("nour", this.props.story);
-    var url = "http://localhost:7000/?id=" + this.props.story._id;
+    //var url = "http://localhost:7000/?id=" + this.props.story._id;
+    var url ="https://murmuring-shelf-31236.herokuapp.com/?id=";
     return (
       <div className="postspace">
         <a href={url}>
